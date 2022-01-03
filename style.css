@@ -1,0 +1,86 @@
+/* variable */
+:root {
+  --primary-col :#090A22;
+}
+
+/* basic  */
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: var(--primary-col);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* layout  */
+.container {
+  width: 60%;
+  padding: 3rem;
+  color: #fff;
+}
+.menu {
+  text-align: center;
+}
+.menu h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  /* background: #FE006B;
+  padding: 2rem; */
+}
+
+/* card  */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-reflect: below 5px linear-gradient(to bottom, transparent,#0003);
+}
+.cardComponent {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cardComponent:not(:last-child) {
+  margin-right: 1rem;
+}
+.num {
+  height: 75%;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #F85757;
+}
+.text {
+  background-color: #1479CE;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+.amPm {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2089E1;
+}
+/* utility Class */
+.u-margin-bottom {
+  margin-bottom: 3rem;
+}
